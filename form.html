@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="forma">
+        <h1>Форма регистрации</h1>
+    </div>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Личная информация</legend>
+            <label for="username">Имя</label>
+            <input type="text" name="username" id="username" placeholder="Введие ваше имя" required tabindex="1">
+            <br>
+            <label for="age">Дата рождения</label>
+            <input type="date" name="age" id="age">
+            <br>
+            <p>Ваш пол:</p>
+            <label for="male">Мужской</label>
+            <input type="radio" name="avatar" id="male">
+            <label for="female">Женский</label>
+            <input type="radio" name="avatar" id="female">
+            <br>
+            <label for="usermail">Почта для связи</label>
+            <input type="email" name="usermail" id="usermail" placeholder="example@mail.ru" tabindex="2">
+            <br>
+            <label for="telephone">Телефон для связи</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="+7 (***)-***-**-**" tabindex="3">
+            <br>
+            <label for="password">Введите ваш пароль</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="avatar">Фото договора</label>
+            <input type="file" name="avatar" id="avatar">
+            <br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend class="legend">Ваши предпочтения</legend>
+            <p>Ваше пожелания по еде</p>
+            <label for="meat">Мясо</label>
+            <input type="checkbox" name="int" id="meat">
+
+            <label for="fish">Рыба</label>
+            <input type="checkbox" name="int" id="fish">
+
+            <label for="vegan">Веган</label>
+            <input type="checkbox" name="int" id="vegan">
+
+            <br>
+            <label for="about">Напишите о возможных ваших аллергиях</label>
+            <textarea name="about" id="about" cols="20" rows="3"></textarea>
+
+            <br>
+            <label for="rooms">Количество комнат в доме</label>
+            <select name="rooms" id="rooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="+4">+4</option>
+            </select>
+        </fieldset>
+        
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>  
+        
+    </form>
+</body>
+
+</html>
